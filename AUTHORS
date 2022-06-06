@@ -1,4 +1,4 @@
-s file lists all individuals having contributed content to the repository.
+# file lists all individuals having contributed content to the repository.
 # For how it is generated, see `hack/generate-authors.
 
 Caren Siya<carensiya5@gmail.com>

@@ -1,5 +1,9 @@
-# This file lists all individuals having contributed content to the repository.
+# file lists all individuals having contributed content to the repository.
 # For how it is generated, see `hack/generate-authors.
 
+<<<<<<< HEAD
 Caren Siya<carensiya5@student.com>
+=======
+Caren Siya<carensiya5@gmail.com>
+>>>>>>> 623c55d2ca0ec720ccc0f3330b464e05bf0166fc
 Brian Kipngeno<bkingeno07@gmail.com>

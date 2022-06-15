@@ -1,4 +1,4 @@
-#include "mainn.h"
+#include "main.h"
 
 /**
  * main - Prints the prompt and calls the functions needed to run the shell.

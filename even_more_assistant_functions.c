@@ -1,8 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * command_not_found - copies a string.
  *
+ * authours: caren and Brian
  * @i: pointer to destionation string.
  * @cmd_list: pointer to source string
  * @count: line counter

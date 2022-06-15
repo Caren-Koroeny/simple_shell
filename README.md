@@ -164,4 +164,8 @@ What you should learn from this project:
 
    * [Github](https://github.com/yobwee-zy)
 
+   * [Email](bkingeno07@gmail.com)
+
+   * [Linkedin]( https://www.linkedin.com/in/brian-kipngeno-104897232) 
+
 

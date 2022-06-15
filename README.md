@@ -40,7 +40,7 @@ What you should learn from this project:
 
 * README, man, AUTHORS
 
-* Write a README, Write a man for your shell. You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository.
+  * Write a README, Write a man for your shell. You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository.
 
 * 0. Betty
  

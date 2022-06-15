@@ -38,117 +38,71 @@ What you should learn from this project:
 
 # Tasks :hammer_and_pick:
 
-* [README, man, AUTHORS](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
+* README, man, AUTHORS
+ // Write a README, Write a man for your shell. You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository.
 
-   * Write a README, Write a man for your shell. You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository.
+* 0. Betty 
+   //Write a beautiful code that passes the Betty checks.
 
-* [0. Betty would be proud](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
+* 1. Simple shell 0.1
+  // Write a UNIX command line interpreter.
 
-   * Write a beautiful code that passes the Betty checks.
+* 2. Simple shell 0.2
+   //Handle command lines with arguments.
 
-* [1. Simple shell 0.1](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
+* 3. Simple shell 0.3
+  // Handle the `PATH`
+  //`fork` must not be called if the command doesn’t exist.
 
-   * Write a UNIX command line interpreter.
+* 4. Simple shell 0.4
+  // Implement the exit built-in, that `exits` the shell
+  // Usage: `exit'
+  // You don’t have to handle any argument to the `built-in exit`
 
-* [2. Simple shell 0.2](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
+* 5.Simple shell 1.0
+  // Implement the `env built-in`, that prints the current environment.
 
-   * Handle command lines with arguments.
+* 6.Simple shell 0.1.1 
+  // Write your own `getline` function
+   // Use a `buffer` to read many chars at once and call the least possible the read system call
+   // You will need to use `static` variables
+   // You are not allowed to use `getline`
 
-* [3. Simple shell 0.3](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
+* 7. Simple shell 0.2.1
+  // You are not allowed to use `strtok`
+* 8. Simple shell 0.4.1
+   //handle arguments for the built-in `exit`
+   // Usage: `exit status`, where status is an integer used to exit the `shell`
+* 9. setenv, unsetenv
+   // **setenv**
+    // Initialize a new environment variable, or modify an existing one
+    //Command syntax: `setenv` VARIABLE VALUE
+    // Should print something on `stderr` on failure.
+   // **unsetenv**
+    // Remove an environment variable.
+    // Command syntax: `unsetenv VARIABLE`.
+    //Should print something on `stderr` on failure
+* 10. cd
+  // Implement the builtin command cd:
+  // Changes the `current directory` of the process.
+    // Command syntax: `cd [DIRECTORY]`
+  // If no argument is given to `cd` the command must be interpreted like `cd $HOME`
+    // You have to handle the command `cd -`
+   // You have to update the environment variable `PWD` when you change directory.
+   // `man chdir, man getcwd`
+* 11. ;
+  // Handle the commands separator `;`
 
-   * Handle the `PATH`
-
-   * `fork` must not be called if the command doesn’t exist.
-
-* [4. Simple shell 0.4](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
-
-   * Implement the exit built-in, that `exits` the shell
-
-   * Usage: `exit`
-
-   * You don’t have to handle any argument to the `built-in exit`
-
-* [5.Simple shell 1.0](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
-
-   * Implement the `env built-in`, that prints the current environment.
-
-* [6.Simple shell 0.1.1](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
-
-   * Write your own `getline` function
-
-   * Use a `buffer` to read many chars at once and call the least possible the read system call
-
-   * You will need to use `static` variables
-
-   * You are not allowed to use `getline`
-
-* [7. Simple shell 0.2.1](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
-
-   * You are not allowed to use `strtok`
-
-* [8. Simple shell 0.4.1](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
-
-   * handle arguments for the built-in `exit`
-
-   * Usage: `exit status`, where status is an integer used to exit the `shell`
-
-* [9. setenv, unsetenv](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
-
-   * **setenv**
-
-    - Initialize a new environment variable, or modify an existing one
-
-    - Command syntax: `setenv` VARIABLE VALUE
-
-    - Should print something on `stderr` on failure.
-
-   * **unsetenv**
- 
-    - Remove an environment variable.
-
-    - Command syntax: `unsetenv VARIABLE`.
-
-    - Should print something on `stderr` on failure
-
-* [10. cd](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
-
-   * Implement the builtin command cd:
-
-    - Changes the `current directory` of the process.
-
-    - Command syntax: `cd [DIRECTORY]`
-
-    - If no argument is given to `cd` the command must be interpreted like `cd $HOME`
-
-    - You have to handle the command `cd -`
-
-    - You have to update the environment variable `PWD` when you change directory.
-
-    - `man chdir, man getcwd`
-
-* [11. ;](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
-
-   * Handle the commands separator `;`
-
-* [12. && and ||](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
-
-   * Handle the `&&` and `||` shell logical operators.
-
-* [13. alias](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
-
-   * Implement the `alias` builtin command
-
-* [14. Variables](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
-
-   * Handle variables replacement - Handle the `$?` variable - Handle the `$$` variable.
-
-* [15. Comments](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
-
-   * Handle comments `(#)`
-
-* [16. File as input](https://github.com/Caren-Koroeny/simple_shell/blob/master/hsh.c)
-
-   * Your shell can take a file as a command line argument.
+* 12. && and ||
+  // Handle the `&&` and `||` shell logical operators.
+* 13. alias
+  //Implement the `alias` builtin command
+* 14. Variables
+   // Handle variables replacement - Handle the `$?` variable - Handle the `$$` variable.
+* 15. Comments
+  // Handle comments `(#)`
+* 16. File as input
+ // Your shell can take a file as a command line argument.
 
 ## Authorblack:  :black_nib:
 

@@ -1,8 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * *_strcpy - copies a string.
  *
+ * authors: Brian and Caren
  * @dest: pointer to destionation string.
  * @src: pointer to source string
  *
